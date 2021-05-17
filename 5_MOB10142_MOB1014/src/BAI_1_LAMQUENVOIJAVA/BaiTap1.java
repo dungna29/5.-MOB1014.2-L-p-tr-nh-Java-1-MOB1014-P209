@@ -7,6 +7,8 @@ package BAI_1_LAMQUENVOIJAVA;
 
 import java.util.Scanner;
 
+
+
 /**
  *
  * @author Dungna29
@@ -23,26 +25,24 @@ public class BaiTap1 {
      */
     //psvm + tab
     public static void main(String[] args) {
+        //Phần 1: Khai báo biến
+        String ten,msv;
+        int namsinh;
+        //Phần 2: Khai báo Scanner
         Scanner sc = new Scanner(System.in);
-        //Bước 1: Xác định số lượng biến cần dùng
-        int ns;
-        String ten, msv;
-
-        //Bước 2: Triển khai
-        System.out.print("Mời bạn nhập tên:");
+        //Phần 3: Triển khai
+        System.out.println("Mời bạn nhập tên: ");
         ten = sc.nextLine();
-        System.out.print("Mời bạn nhập năm sinh:");
-        //ns = sc.nextInt();//Khi sử dụng next Số mà phía sau sau là nextLine()
-        //Cách 1: Học để biết không nên dùng
-        //sc.nextLine();        
-        //Cách 2: Dùng thường xuyên
-        ns = Integer.parseInt(sc.nextLine());
-        System.out.print("Mời bạn nhập msv:");
+        System.out.println("Mời bạn nhập năm sinh: ");
+        //Cách số 1: Xử lý trôi lệnh
+//        namsinh = sc.nextInt();
+//        sc.nextLine();
+        //Cách số 2: Ép kiểu để chống trôi lệnh
+        namsinh = Integer.parseInt(sc.nextLine());
+        System.out.println("Mời bạn nhập mã sinh viên: ");
         msv = sc.nextLine();
-        
-        //Bước 3: In ra màn hình
-        System.out.printf("Tên: %s | Ns: %d | Msv: %s",ten,ns,msv);
-
+        System.out.printf("Tên: %s | Năm sinh: %d | Msv: %s",
+                ten,namsinh,msv);
     }
 
 }
