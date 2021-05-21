@@ -21,10 +21,28 @@ public class BAI_TAP_LAB1 {
         2.2 Viết 1 chương trình tính tuổi người yêu cũ và bản thân mình. Yêu cầu người sử dụng nhập vào năm sinh của bản thân
     và năm sinh của người yêu cũ. Sau khi nhập xong 2 thông tin này hãy tính ra số tuổi của 2 người in ra màn hình và in ra
     2 người cách nhau bao nhiêu tuổi.
-
     */
     
     public static void main(String[] args) {
+        int namSinhBanThan,namSinhNYCu,tuoiBanThan,tuoiNY;
+        Scanner sc = new Scanner(System.in);        
+        do {            
+            System.out.println("Mời bạn nhập năm sinh chính bạn: ");
+            namSinhBanThan = Integer.parseInt(sc.nextLine());
+            System.out.println("Mời bạn nhập năm sinh NY cũ: ");
+            namSinhNYCu = Integer.parseInt(sc.nextLine());
+            System.out.println("Tuổi bạn là: " + (2021 - namSinhBanThan));
+            System.out.println("Tuổi NY cũ là: " + (2021 - namSinhNYCu));
+            tuoiBanThan = 2021 - namSinhBanThan;
+            tuoiNY = 2021 - namSinhNYCu;
+            if (tuoiBanThan < tuoiNY) {
+                int temp = tuoiBanThan;
+                tuoiBanThan = tuoiNY;
+                tuoiNY = temp;
+            }
+            System.out.println("Tuổi bản thần và NY cũ cách nhau: "+
+            (tuoiBanThan - tuoiNY));
+        } while (true);
         
     }
 }
