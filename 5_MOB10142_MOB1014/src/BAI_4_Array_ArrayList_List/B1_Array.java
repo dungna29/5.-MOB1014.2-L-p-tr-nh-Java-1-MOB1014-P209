@@ -43,40 +43,48 @@ public class B1_Array {
          *      <tên mảng>.length = kích thước mảng có kiểu số nguyên
      */
     public static void main(String[] args) {
-        //Phần 1: Khai báo
-        int[] arrNumber1;//Khai báo 1 mảng
-        int arrNumber2[];
-        arrNumber2 = new int[5];//Khởi tạo ra 1 mảng có 5 phần tử
-        
-        String[] arrNames = new String[5];
-        double[] diemJava1 = new double[]{8.6,8.7};
-        double[] diemJava2 = {8.6,8.7};
-        
-        var arrYears = new int[5];
-        var arrStrings = new String[5];
-        
-        //Phần 2: Gán giá trị cho mảng thì cần biết index
-       //arrNumber2 = 5; không xác định đưa giá 5 vào index
-       arrNumber2[0] = 5;//Gán giá trị tại index 0
-       arrNumber2[1] = 7;
-       arrNumber2[0] = 10;//Ghi đè
+       //Phần 1: Khai báo 1 mảng
+       int a = 10;      
+       int[] arrNumber1;
+       int arrNumber2[] = {10,5,9,8,7};//Khởi tạo giá trị ngay khi khai báo
+       String[] arrString1;
+       double[] arrDouble;
        
+       arrNumber1 = new int[5];//Khởi tạo kích thước mảng
+       arrString1 = new String[10];//Khởi tạo kích thước mảng string
+       
+       //Phần 2: Gán giá trị cho mảng thì cần biết index
+       //arrNumber1 = 5; //không xác định đưa giá 5 vào index
+       arrNumber1[0] = 5;
+       arrNumber1[1] = 8;
+       arrNumber1[2] = 7;
+       arrNumber1[0] = 10;//Ghi đè
+       arrNumber1[3] = 99;
+       arrNumber1[4] = 20;       
+       
+       arrString1[0] ="FPT";
        //Phần 3: Lấy giá trị
-        System.out.println(arrNumber2[0]);
-        System.out.println(arrNumber2[1]);
-        System.out.println(arrNumber2[2]);
-        System.out.println(arrNumber2[3]);
-        System.out.println(arrNumber2[4]);
-        
-        //In nhiều giá trị
-        System.out.println("Kích thước của mảng" + arrNumber2.length);
-        for (int i = 0; i < arrNumber2.length; i++) {
-            System.out.print(arrNumber2[i] + " ");
+       //arrNumber1[0] = 1 giá trị của mảng có kiểu dữ liệu
+        System.out.println(arrNumber1[0]);
+        System.out.println(arrNumber1[1]);
+        System.out.println(arrNumber1[2]);
+        System.out.println(arrNumber1[3]);
+        System.out.println(arrNumber1[4]);
+        System.out.println("==============");
+       //In nhiều giá trị
+       //arrNumber1.length = độ dài mảng có kiểu số nguyên
+        for (int i = 0; i < arrNumber1.length; i++) {
+             System.out.print(arrNumber1[i] + " ");
         }
-        
         System.out.println("");
-        for (int x : arrNumber2) {
-            System.out.print(x + " ");
+        for (int abc : arrNumber1) {
+             System.out.print(abc + " ");
         }
+        System.out.println("");
+        System.out.println(Byte.MAX_VALUE);
+        System.out.println(Byte.MIN_VALUE);
+        //byte c = 128;
+        byte[] b = new byte[2];
+        //b[0] = 128;
     }
 }
