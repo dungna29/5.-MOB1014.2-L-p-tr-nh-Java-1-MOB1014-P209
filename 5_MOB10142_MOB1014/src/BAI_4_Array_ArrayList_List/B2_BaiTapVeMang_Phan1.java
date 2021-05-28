@@ -18,8 +18,8 @@ public class B2_BaiTapVeMang_Phan1 {
             sau đó in ra màn hình          
             
      */
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {        
         String[] arrNames;//Khai báo mảng tên
         String input;//Biến người dùng nhập
         System.out.println("Ông muốn bao nhiêu tên: ");
@@ -36,7 +36,9 @@ public class B2_BaiTapVeMang_Phan1 {
         for (String x : arrNames) {
             System.out.print(x + "");
         }
-        /*
+       
+    }
+     /*
         Bài 1: Viết 1 chương trình cho phép người dùng nhập
         vào bao nhiêu số tùy thích. Sau khi nhập xong in ra màn
         hình các số chẵn trên 1 dòng và số lẻ trên 1 dòng.
@@ -46,5 +48,29 @@ public class B2_BaiTapVeMang_Phan1 {
         và bệnh cạnh mỗi 1 đầu điểm thông báo Trượt hoặc đỗ dựa
         trên điều kiện điểm đỗ >=5 và Trượt <5.
         */
+    static void Bai1(){
+        int[] arrNumber;
+        String input;
+        System.out.println("Mời bạn nhập số lượng: ");
+        input = sc.nextLine();
+        arrNumber = new int[Integer.parseInt(input)];
+        for (int i = 0; i < arrNumber.length; i++) {
+            System.out.printf("Mời bạn nhập index thứ %d: ",i);
+            arrNumber[i] = Integer.parseInt(sc.nextLine());
+        }
+        System.out.println("Các số chẵn bạn vừa nhập: ");
+        for (int x : arrNumber) {
+            if (x%2 == 0) {
+                System.out.print(x + " ");
+            }
+        }
+        System.out.println("");
+        System.out.println("Các số lẻ bạn vừa nhập: ");
+         for (int x : arrNumber) {
+            if (x%2 != 0) {
+                System.out.print(x + " ");
+            }
+        }
+        
     }
 }

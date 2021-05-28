@@ -16,6 +16,9 @@ public class B4_ThuatToanSapXepNoiBot {
      */
     public static void main(String[] args) {
         int[] arrNumber = {8, 7, 5, 6};
+        //Tại i = 0 và j = 1: 8 > 7 = 7856
+        //Tại i = 0 và j = 2: 7 > 5 = 5876
+        //Tại i = 0 và j = 3: 5 > 6 = 5876
 //        for (int i = 0; i < arrNumber.length; i++) {
 //            for (int j = i + 1; j < arrNumber.length; j++) {
 //                if (arrNumber[i] > arrNumber[j]) {

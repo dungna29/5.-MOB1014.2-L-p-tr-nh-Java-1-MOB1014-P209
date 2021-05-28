@@ -7,6 +7,7 @@ package BAI_4_Array_ArrayList_List;
 
 import java.util.AbstractList;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -48,16 +49,65 @@ public class B6_List {
     */
     public static void main(String[] args) {
         //1. Khởi tạo ArrayList không định kiểu và có định kiểu
-        
-        //      - List không định kiểu
-        List lstNubmer = new ArrayList();
-       
+
+        //      - ArrayList không định kiểu
+        List lstKhongDinhKieu = new ArrayList();
+        List lstKhongDinhKieu1;
+        lstKhongDinhKieu1 = new ArrayList();
+
         //      - ArrayList định kiểu
-        List<String> lstName = new ArrayList();
-        
+        List<Integer> lstKieuSoNguyen = new ArrayList<Integer>();
+        List<Double> lstKieuSoThuc = new ArrayList<Double>();
+        List<String> lstKieuChuoi = new ArrayList<String>();
+
         //2. Gán giá trị
+        //      - ArrayList không định kiểu
+        lstKhongDinhKieu.add(1);
+        lstKhongDinhKieu.add("FPT POLY");
+        lstKhongDinhKieu.add(8.6);
+        lstKhongDinhKieu.add(true);
+        lstKhongDinhKieu.add(0, 5);//Ghi đè giá trị tại vị trí
+        
+        //Khi add thêm số nguyên thủy thì tự động chuyển sang đối tượng kiểu wrapper Double Interge
+        //Khi truy xuất các phần tử, cần ép về kiểu gốc của phần tử để xử lý
+        Double diem = (Double) lstKhongDinhKieu.get(2);
+        diem = Double.valueOf(diem);
+        //Lỗi không ép kiểu được
+        //double diem = arrLstKhongDinhKieu.get(2); 
+        //double diem = (double)arrLstKhongDinhKieu.get(2); 
+                
+
+        //      - ArrayList định kiểu
+        lstKieuChuoi.add("B");
+        lstKieuChuoi.add("C");
+        lstKieuChuoi.add("A");
+
         //3. Lấy giá trị
+        System.out.println(lstKhongDinhKieu.get(0));
+
+        for (int i = 0; i < lstKhongDinhKieu.size(); i++) {
+            System.out.println(lstKhongDinhKieu.get(i));
+        }
+
+        for (var x : lstKieuChuoi) {
+            System.out.println(x);
+        }
         //4. Một vài ví dụ về các phương thức
+        
+        //isEmpty() kiểm tra xem list có rỗng hay không
+        System.out.println(lstKieuChuoi.isEmpty());
+        //Collections.sort - chú ý chữ s và dùng để sắp xếp từ bé đến lớn
+        Collections.sort(lstKieuChuoi);
+        System.out.println("-------- sort");
+        for (var x : lstKieuChuoi) {
+            System.out.println(x);
+        }
+        //Collections.reverse - Đảo ngược danh sách
+        Collections.reverse(lstKieuChuoi);       
+        System.out.println("-------- reverse");
+        for (var x : lstKieuChuoi) {
+            System.out.println(x);
+        }
        
     }
   
