@@ -80,6 +80,8 @@ public class BAI_TAP_LAB_45 {
             arrName[i] = sc.nextLine();
             System.out.println("Mời bạn nhập năm sinh: ");
             namSinh[i] = Integer.parseInt(sc.nextLine());
-        }
+        }       
+     
+       
     }
 }
