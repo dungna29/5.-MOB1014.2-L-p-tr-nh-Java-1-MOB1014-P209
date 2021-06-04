@@ -34,11 +34,12 @@ public class SinhVien {
     
     // 2.2 Contructor có tham số: Tương tự cách trên nhưng Select All Thuộc tính
 
-    public SinhVien(String msv, String nganhHoc, int namSinh, String email) {
-        this.msv = msv;
+    public SinhVien(String msv1, String nganhHoc, int namSinh, String email) {
+        msv = msv1;
         this.nganhHoc = nganhHoc;
         this.namSinh = namSinh;
         this.email = email;
+        //this dùng để tham chiếu đến thuộc tính hoặc phương thức của lớp hiện tại
     }
     
     //Phần 3: Getter và Setter: Chuột Phải chọn Insert Code

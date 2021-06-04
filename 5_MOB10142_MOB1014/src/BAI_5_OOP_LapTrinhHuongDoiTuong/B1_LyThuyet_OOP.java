@@ -24,11 +24,8 @@ public class B1_LyThuyet_OOP {
         phương thức của đối tượng.
     
     2. 4 Tính chất của OOP:
-        + Đa hình (Polymorphism): Nó thể hiện rõ nhất khi gọi đến một phương thức của đối tượng giống nhau nhưng kết quả 
-        của phương thức đó có thể khác nhau.
-    
-            - Nạp chồng (Overloading): Nạp chồng phương thức cùng tên cùng kiểu phương thức nhưng khác
-                tham số truyền vào. Khi đưa đúng số lượng tham số truyền vào sẽ gọi đúng phương thức cần được thực hiện.
+        + Đa hình (Polymorphism): Nó thể hiện rõ nhất khi gọi đến một phương thức của đối tượng giống nhau nhưng kết quả của phương thức đó có thể khác nhau.    
+            - Nạp chồng (Overloading): Nạp chồng phương thức cùng tên cùng kiểu phương thức nhưng khác tham số truyền vào. Khi đưa đúng số lượng tham số truyền vào sẽ gọi đúng phương thức cần được thực hiện.
     
             - Ghi đè (Overriding): Ghi đè phương thức có cùng tên cùng tham số giữa lớp cha và lớp con. Các phương
                 thức của lớp con kế thừa từ lớp cha từ kiểu phương thức, tên, tham số truyền vào nhưng tại các lớp con 
@@ -98,12 +95,5 @@ public class B1_LyThuyet_OOP {
         sv2.inRaManHinh();
         //Dùng getter
         System.out.println(sv1.getMsv() + sv1.getNganhHoc() + sv1.getTruongHoc());
-       
-        
-        
-        
-        
-        
-        
     }
 }
