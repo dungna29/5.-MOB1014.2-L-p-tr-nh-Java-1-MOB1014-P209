@@ -50,7 +50,7 @@ public class ClassCon extends ClassCha{
   //Khi kế thừa phương thức của lớp cha gọi là ghi đè phương thức (Lớp con có toàn quyền code lại bên trong phương thức mà nó kế thừa từ lớp cha)
   
   @Override
-  public void method3(String temp) {
+  public void method3(String temp, int a) {
     //super.method3(temp); //To change body of generated methods, choose Tools | Templates.
     System.out.println("Đây lã text method3 ở class con");
     System.out.println("Class con muốn thay đổi hành động?");

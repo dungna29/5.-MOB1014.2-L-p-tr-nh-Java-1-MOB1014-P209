@@ -70,6 +70,22 @@ public class SinhVienService {
     System.out.println("Sinh viên bạn cần tìm không tìm thấy");
   }
 
+  void timKiemGanDung() {
+    System.out.println("Mời bạn nhập sdt: ");
+    _input = _sc.nextLine();
+    boolean flag = true;
+    for (int i = 0; i < _lstSinhVien.size(); i++) {
+      if (_lstSinhVien.get(i).getMsv().startsWith(_input)) {
+        _lstSinhVien.get(i).inRaManHinh();
+        flag = false;
+      }
+    }
+    if (flag) {
+      System.out.println("Không tìm thấy số điện thoại gần đúng");
+    }
+
+  }
+
   void timKiemSVNangCao() {
     int temp = getIndex();
     if (temp == -1) {

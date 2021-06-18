@@ -22,9 +22,9 @@ public class Main {
 
     //Ghi đè phương thức khi kế thừa
     ClassCha classCha1 = new ClassCha();
-    classCha1.method3("FPT");
+    classCha1.method3("FPT",21);
     ClassCon classCon3 = new ClassCon();
-    classCon3.method3("FPT");
+    classCon3.method3("FPT",21);
      
   }
 }

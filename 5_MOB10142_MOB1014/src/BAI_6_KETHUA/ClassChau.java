@@ -29,8 +29,8 @@ public class ClassChau extends ClassCon{
   }
 
   @Override
-  public void method3(String temp) {
-    super.method3(temp); //To change body of generated methods, choose Tools | Templates.
+  public void method3(String temp, int a) {
+    
     
   }
 

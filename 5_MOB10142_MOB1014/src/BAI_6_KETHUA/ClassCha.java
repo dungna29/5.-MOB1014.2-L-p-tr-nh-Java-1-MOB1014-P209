@@ -90,7 +90,7 @@ public class ClassCha {
 
   }
 
-  public void method3(String temp) {
+  public void method3(String temp, int a) {
     System.out.println("Đây là text từ method3 class cha");
   }
 }
